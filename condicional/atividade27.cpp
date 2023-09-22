@@ -8,7 +8,7 @@ main() {
 	printf("Informe a altura, em metros: ");
 	scanf("%f", &altura);
 	
-	if (sexo == 'm' or sexo == 'M') {
+	if (sexo == 'm' || sexo == 'M') {
 		pesoIdeal = (72.7 * altura) - 58;
 	} else {
 		pesoIdeal = (62.1 * altura) - 44.7;		
