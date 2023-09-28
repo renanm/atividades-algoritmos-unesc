@@ -5,11 +5,12 @@ main() {
 	float peso1, peso2;
 	
 	printf("Informe o nome da primeira pessoa: ");
-	scanf("%s", pessoa1);
+	gets(pessoa1);
 	printf("Informe o peso dessa pessoa: ");
 	scanf("%f", &peso1);
 	printf("Informe o nome da segunda pessoa: ");
-	scanf("%s", pessoa2);
+	fflush(stdin);
+	gest(pessoa2);
 	printf("Informe o peso dessa pessoa: ");
 	scanf("%f", &peso2);
 	
