@@ -40,9 +40,9 @@ main() {
 		imposto = 0.08;
 	}
 	
-	precoFinal = precoComAumento * (1 + imposto);
+	precoFinal = precoComAumento * (1 - imposto);
 	
-	printf("Valor do aumento: R$ %.2f (%.0f%%)\n", precoComAumento, aumento * 100);
+	printf("Valor do aumento: R$ %.2f (%.0f%%)\n", preco * aumento, aumento * 100);
 	printf("Valor do imposto: R$ %.2f (%.0f%%)\n", precoComAumento * imposto, imposto * 100);
 	printf("Preco final: R$ %.2f\n", precoFinal);
 	
@@ -53,8 +53,4 @@ main() {
 	} else {
 		printf("Classificacao: Caro\n");
 	}
-	
-
-	
-	
 }
