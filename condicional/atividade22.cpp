@@ -10,7 +10,7 @@ main() {
 	scanf("%f", &peso1);
 	printf("Informe o nome da segunda pessoa: ");
 	fflush(stdin);
-	gest(pessoa2);
+	gets(pessoa2);
 	printf("Informe o peso dessa pessoa: ");
 	scanf("%f", &peso2);
 	
