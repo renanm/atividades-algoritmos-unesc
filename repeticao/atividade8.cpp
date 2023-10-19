@@ -7,6 +7,7 @@ main() {
 	char nome[50];
 	int idade;
 	char sexo;
+	
 	for (int i = 0; i < 20; i++) {
 		printf("Informe o nome: ");
 		scanf("%s", nome);
@@ -22,5 +23,4 @@ main() {
 			printf("\n\n");
 		}
 	}
-	
 }
