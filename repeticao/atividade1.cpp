@@ -9,5 +9,4 @@ main() {
 		scanf("%f", &numero);
 		printf("Raiz quadrada: %f\n\n", sqrt(numero));
 	}
-	
 }
