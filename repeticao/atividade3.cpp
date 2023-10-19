@@ -10,5 +10,4 @@ main() {
 		scanf("%d", &numero);
 		printf("Triplo: %d\n\n", numero * 3);
 	}
-	
 }
