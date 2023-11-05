@@ -47,7 +47,7 @@ main() {
 			printf("Total de pontos: %.1f\n", pontuacao);
 			break;
 		}
-		tentativas += 1;			
+		tentativas++;			
 	}
 	
 	if (tentativas > chances) {
