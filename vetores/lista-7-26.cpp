@@ -87,6 +87,7 @@ main() {
                     }
                 }
                 break;
+            
             default:
                 printf("Opcao invalida!\n");
         }
