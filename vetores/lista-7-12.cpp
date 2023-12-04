@@ -6,7 +6,8 @@ deve ter a capacidade de armazenar no máximo 5 elementos. */
 
 main() {
 	int a[5], b[10], i[5];
-	
+
+	// usando "j" como contador porque o "i" já foi usado acima 
 	for (int j = 0; j < 10; j++) {
 		
 		// Preenche o vetor A
