@@ -1,8 +1,8 @@
 #include<stdio.h>
 
-/* Elabore um programa em C/C++ que entre com 5 n˙meros inteiros em um vetor A, e 10 n˙meros inteiros 
-pares em um vetor B. Construir um vetor I, sendo este a intersecÁ„o dos vetores A e B. Dessa forma, C 
-deve ter a capacidade de armazenar no m·ximo 5 elementos. */
+/* Elabore um programa em C/C++ que entre com 5 n√∫meros inteiros em um vetor A, e 10 n√∫meros inteiros 
+pares em um vetor B. Construir um vetor I, sendo este a intersec√ß√£o dos vetores A e B. Dessa forma, C 
+deve ter a capacidade de armazenar no m√°ximo 5 elementos. */
 
 main() {
 	int a[5], b[10], i[5];
@@ -18,6 +18,7 @@ main() {
 		// Preenche o vetor B
 		printf("Numero PAR para o vetor B: ");
 		scanf("%d", &b[j]);
+		// O loop abaixo √© para caso o usu√°rio informe um n√∫mero que n√£o seja par
 		while (b[j] % 2 != 0) {
 			printf("Invalido! Numero PAR para o vetor B: ");
 			scanf("%d", &b[j]);			
@@ -25,9 +26,9 @@ main() {
 	}
 	
 	// Preenche o vetor I
-	int index_i = 0; // ser· usado como contador para a alocaÁ„o dos dados no vetor I
+	int index_i = 0; // ser√° usado como contador para a aloca√ß√£o dos dados no vetor I
 	for (int j = 0; j < 5; j++) {
-		if (a[j] % 2 == 0) { // SÛ faz a iteraÁ„o no vetor B se o n˙mero for par
+		if (a[j] % 2 == 0) { // S√≥ faz a itera√ß√£o no vetor B se o n√∫mero for par
 			for (int k = 0; k < 10; k++) {
 				if (a[j] == b[k]) {
 					i[index_i] = a[j];
@@ -39,7 +40,7 @@ main() {
 	}
 
 	printf("O vetor I ficou assim: ");
-	for (int j = 0; j < index_i ; j++) { // o contador usado no loop anterior È a referÍncia aqui
+	for (int j = 0; j < index_i ; j++) { // o contador usado no loop anterior √© a refer√™ncia aqui
 		printf("%d ", i[j]);
 	}
 }
