@@ -41,7 +41,7 @@ main() {
 	}
 
 	printf("O vetor I ficou assim: ");
-	for (int j = 0; j < index_i ; j++) { // o contador usado no loop anterior é a referência aqui
+	for (int j = 0; j < index_i ; j++) { // o contador usado no loop anterior (index_i) é a referência aqui
 		printf("%d ", i[j]);
 	}
 }
